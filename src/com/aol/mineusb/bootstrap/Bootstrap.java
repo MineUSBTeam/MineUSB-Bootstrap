@@ -236,7 +236,7 @@ public class Bootstrap {
 			@SuppressWarnings("resource")
 			Class<?> mineUSBClass = new URLClassLoader(new URL[] { mineUSBJar
 					.toURI().toURL() })
-					.loadClass("com.aol.w67clement.mineusb.MineUSB");
+					.loadClass("com.aol.mineusb.MineUSB");
 			Constructor<?> constructor = mineUSBClass
 					.getConstructor(new Class<?>[] {});
 			mineUSBClass.getMethod("main", new Class<?>[] { String[].class })
